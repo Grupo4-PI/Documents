@@ -1,0 +1,48 @@
+#!/bin/bash
+
+echo "Seja Bem-Vindo!"
+echo "Você está prestes a obter o NoCrash Application."
+sleep 2
+echo "Você deseja instalar a nossa aplicação?"
+echo "y/n"
+read resp1
+if [ $resp1 = "y" ]
+        then echo "Você ACEITOU instalar o NoCrash Application"        
+	sleep 1
+        echo "."
+        sleep 1
+        echo "."
+        sleep 1
+        echo "Analisaremos sua máquina e instalaremos nossos resursos"
+        sleep 1
+        clear
+        docker --version
+                if [ $? -eq 0 ]
+                        then echo "Docker instalado!"
+                        sleep 1
+                        else echo "Docker Não Instalado!"
+                        echo "Instalando o Docker..."
+                        sudo apt install docker.io
+                fi
+        clear
+        java -version
+                if [ $? -eq 0 ]
+                        then echo "Java Instalado!"
+                        sleep 1
+                        else echo "Java Não Instalado!"
+                        echo "Instalando o Java..."
+                        sudo apt-get install oracle-java11-installer -y
+                fi
+        echo "Processos Feitos!"
+        else echo "Você NÃO ACEITOU instalar o NoCrash Application"
+        echo "Que pena"
+        sleep 1
+        echo "."
+        sleep 1
+        echo "."
+        sleep 1
+        echo "."
+        sleep 1
+        echo "Caso mude de ideia, execute o script novamente e siga os passos!"
+        echo "Até mais! :D"
+fi
