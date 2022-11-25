@@ -3,10 +3,9 @@
 echo "Seja Bem-Vindo!"
 echo "Você está prestes a obter o NoCrash Application."
 sleep 2
-echo "Você deseja instalar a nossa aplicação?"
-echo "Y/n"
+echo "Você deseja instalar a nossa aplicação? S/n"
 read resp1
-if [ $resp1 = "Y" ]
+if [ $resp1 = "S" ]
         then echo "Você ACEITOU instalar o NoCrash Application"
         sleep 1
         echo "."
@@ -57,7 +56,6 @@ if [ $resp1 = "Y" ]
 
                 sudo docker run -d -p 3306:3306 --name mysql -e "MYSQL_ROOT_PASSWORD=urubu100" nocrash-db
 
-
                 cd jframe-screens/Monitoramento/target
 
                 sudo docker start mysql
@@ -76,7 +74,5 @@ if [ $resp1 = "Y" ]
                         echo "."
                         sleep 1
                         echo "Caso mude de ideia, execute o script novamente e siga os passos!"
-                        eciho "Até mais! :D"
+                        echo "Até mais! :D"
 fi
-[A[A[C[B[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[[[Ci[D[Dho "Até mais [B[B[A[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[B[A[D
-
