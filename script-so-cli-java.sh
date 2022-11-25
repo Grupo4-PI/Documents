@@ -5,8 +5,7 @@ echo "Você está prestes a obter o NoCrash Application."
 
 sleep 2
 
-echo "Você deseja instalar a nossa aplicação?"
-echo "S/n"
+echo "Você deseja instalar a nossa aplicação? S/n"
 
 read resp1
 if [ $resp1 = "S" ]
