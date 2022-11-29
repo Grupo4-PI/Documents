@@ -18,6 +18,8 @@ if [ $resp1 = "S" ]
         
         echo "Analisaremos sua máquina e instalaremos nossos resursos"
         sleep 1
+	
+	sudo apt update && sudo apt upgrade -y
       
         docker --version
                 if [ $? -eq 0 ]
